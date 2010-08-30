@@ -77,3 +77,14 @@ puts arr.uniq
 puts arr
 arr.uniq!
 puts arr
+
+#7 -> concat, +, -
+
+arr = [1,2]
+puts arr + [3,4]
+puts arr
+arr.concat [3,4]
+puts arr
+arr = arr - [2,4]
+puts arr
+
