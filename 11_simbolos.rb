@@ -44,3 +44,10 @@ monstros = {
   :normal => Criatura.new('urso', 50, 50),
   :normal => Criatura.new('dragao', 150, 150)  
 }
+
+# são objetos únicos
+
+puts "test".object_id
+puts "test".object_id
+puts :test.object_id
+puts :test.object_id
