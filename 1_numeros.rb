@@ -27,3 +27,21 @@ puts 9/2 # Divisões com inteiros sempre retorna inteiro
 puts 5 * (12-8) + -15
 puts 98 + (59872 / (13*8)) * -52
 
+#4 -> Métodos básicos
+
+1.to_f
+1.1.to_i
+1.9.to_i
+
+56.1.ceil
+56.4.round
+57.9.round
+57.9.floor
+
+3.even? # é par?
+3.odd?  # é ímpar?
+3.zero? # é zero?
+0.zero?
+
+(1.655).abs
+(-9.98798).abs
