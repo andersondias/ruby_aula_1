@@ -1,4 +1,4 @@
-#1
+#1 -> Introdução
 
 []
 [5]
@@ -7,56 +7,73 @@
 sabor = "Baunilha" # isso não é um array
 [89.9, sabor, [true, false]] # isso é
 
-#2
+#2 -> Acessando os elementos do array
 
-nomes = ['Ada', 'Belle', 'Chris']
+nomes = ['Ada', 'Belle', 'Chris', 'Anderson', 'Rafael']
 
 puts nomes
 puts nomes[0]
 puts nomes[1]
 puts nomes[2]
-puts nomes[3]  #  Esse está fora do intervalo.
+puts nomes[3]
+puts nomes[4]
+puts nomes[5]  #  Esse está fora do intervalo.
 
-#3 each
+puts nomes[0..1]
+puts nomes[1..3]
+puts nomes[0, 2]
+puts nomes[0, 3]
+puts nomes[2, 3]
 
-monstros = ['sapos', 'lagartos', 'dragões']
-
-monstros.each do |nome|
-  puts "Cuidado! Tem #{nome} espalhados por aqui!"
-end
-
-#4 times
-
-3.times do
-  puts 'Hip-Hip-Hurra!'
-end
-
-# puts
+#3 -> puts, imprimindo arrays na tela
 
 comidas = ['chocolate', 'brigadeiro', 'meio amargo']
 
 puts comidas
-puts
 puts comidas.to_s
-puts
 puts comidas.join(', ')
-puts
 puts comidas.join('  :)  ') + '  8)'
 
-200.times do
-  puts []
-end
-
-# pop, push, last
+#4 -> shift, pop, unshift, push, first, last
 
 favoritos = []
 favoritos.push 'gotas de chuva em rosas'
+puts favoritos
 favoritos.push 'whisky em gatinhos'
 
 puts favoritos[0]
+puts favoritos.first
+puts favoritos[-1]
 puts favoritos.last
 puts favoritos.length
+
+favoritos.unshift "cerejas com sorvete"
+puts favoritos
+favoritos.unshift "café com café"
+puts favoritos.size
 
 puts favoritos.pop
 puts favoritos
 puts favoritos.length
+
+puts favoritos.shift
+puts favoritos
+puts favoritos.size
+
+#5 -> reverse
+
+arr = [1,2,3,4,5]
+puts arr
+puts arr.reverse
+puts arr
+arr.reverse!
+puts arr
+
+#6 -> uniq
+
+arr = [1, 1, 2, 3, 4, 3, 4]
+puts arr
+puts arr.uniq
+puts arr
+arr.uniq!
+puts arr
