@@ -3,6 +3,7 @@
 nil.class
 true.class
 false.class
+//.class
 
 # objetos são criados com new
 
