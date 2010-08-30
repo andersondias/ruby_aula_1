@@ -16,7 +16,7 @@ puts 'cat' == 'cat' #java não deixa
 #2 if
 
 vida = gets.to_i
-puts"Você tem #{vida} pontos de vida."
+puts "Você tem #{vida} pontos de vida."
 if vida <= 0
   puts "Você está muito cansado pra lutar"
 end
@@ -24,7 +24,7 @@ end
 #3 else
 
 vida = gets.to_i
-puts"Você tem #{vida} pontos de vida."
+puts "Você tem #{vida} pontos de vida."
 if vida <= 0
   puts "Você está muito cansado pra lutar"
 else
